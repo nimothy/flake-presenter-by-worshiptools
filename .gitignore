@@ -1,0 +1,33 @@
+# --- Nix & direnv ---
+result
+result-*
+.direnv/
+.devenv/
+.devenv*
+# keep .envrc if it only has `use flake`; ignore local overrides
+.envrc.local
+
+# --- Editors / IDEs ---
+# Neovim/Vim
+*.swp
+*.swo
+*.swx
+*~
+# VS Code / JetBrains
+.vscode/
+.idea/
+# ctags
+tags
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- AppImage test artifacts (local downloads) ---
+# safe to ignore since the flake fetches remotely
+*.AppImage
+Presenter-*.AppImage
+
+# --- Logs ---
+*.log
+
