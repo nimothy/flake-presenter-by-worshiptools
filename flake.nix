@@ -39,7 +39,7 @@
               version = "2025.1.1";
               src = fetchurl {
                 url = "https://download.worshiptools.com/download/latest/linux";
-                hash = "sha256-OA2JCa+j9//PRAM+HVr51ivbyeTql9i3h4b2ze95ObA=";
+                hash = "sha256-yrAkgFm501uDjDebiK/SsDyQbX2oLC2UbQqE47TrUE8=";
               };
               contents = appimageTools.extractType2 { inherit pname version src; };
             in
